@@ -23,4 +23,6 @@
 * Services Used: GCP App Engine
 
 ## Files
-* [a link](https://github.com/safaa-mammed/kasatria-assessment/tree/master/web/index.php) Routing
+* [Routing](https://github.com/safaa-mammed/kasatria-assessment/tree/master/web/index.php)
+* [Login](https://github.com/safaa-mammed/kasatria-assessment/tree/master/web/login.php)
+* [Data Visualization](https://github.com/safaa-mammed/kasatria-assessment/tree/master/web/table.php)
