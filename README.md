@@ -5,10 +5,12 @@
 
 ## Google Sheets Data Retrieval
 * Import using sheet ID and sheet name
-* Fetch CSV data and convert to objects
-* Store object and variable to retreive wherever necessary
+* Fetch CSV data and convert to object
+* Store object as variable to retrieve whenever necessary
 
 ## Data Visualization
+* Utilizing three.js library
+* Language Used: JavaScript
 * Table:
     * If-else conditions used to set the color of tile
     * Adjusted positions to place tiles in a 20x10 format
