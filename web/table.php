@@ -152,7 +152,6 @@ $google_picture = $_SESSION['google_picture'];
 			import { CSS3DRenderer, CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
 
 			//import sheet data
-			// sheetID you can find in the URL of your spreadsheet after "spreadsheet/d/"
 			const sheetId = "1xfam0WX2zMEXRHUzSMXUGEl6YooHmaN_XWb8M-saErs";
 			// sheetName is the name of the TAB in your spreadsheet
 			const sheetName = encodeURIComponent("Sheet1");
@@ -194,7 +193,7 @@ $google_picture = $_SESSION['google_picture'];
 						currentValue += char;
 						}
 					}
-					values.push(currentValue.trim()); // Add the last value
+					values.push(currentValue.trim()); 
 
 					// Remove surrounding quotes from each value if they exist
 					return values.map(value => {
@@ -229,14 +228,11 @@ $google_picture = $_SESSION['google_picture'];
 
 					const element = document.createElement( 'div' );
 					element.className = 'element';
-					// element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					// console.log(table[i]["Net Worth"].replace("$",""));
 
 					if(table[i]["Net Worth"].replace("$","").replace(",","") > 200000) {
 						element.style.border = '1px solid #3A9F48';
 						element.style.boxShadow = '0px 0px 12px #3A9F48';
 						element.style.backgroundColor = 'rgba(2,38,7,100)'
-						// element.styleSheet.cssText = '.element:hover {box-shadow: 0px 0px 12px rgba(0,255,255,0.75);border: 1px solid rgba(127,255,255,0.75);}';
 					}
 					else if(table[i]["Net Worth"].replace("$","").replace(",","") > 100000) {
 						element.style.border = '1px solid #FDCA35';
@@ -248,13 +244,6 @@ $google_picture = $_SESSION['google_picture'];
 						element.style.boxShadow = '0px 0px 12px #EF3022';
 						element.style.backgroundColor = 'rgba(33,3,1,100)'
 					}
-
-					// const number = document.createElement( 'div' );
-					// number.className = 'number';
-					// // number.textContent = ( i / 5 ) + 1;
-					// number.textContent = table[i].Age + " " + table[i].Country;
-
-					// element.appendChild( number );
 
 					const number = document.createElement('div');
 					number.className = 'number';
@@ -270,14 +259,11 @@ $google_picture = $_SESSION['google_picture'];
 
 					const symbol = document.createElement( 'img' );
 					symbol.className = 'symbol';
-					// symbol.textContent = table[ i ]; //name
-					// symbol.textContent = table[i].Country;
 					symbol.src =  table[i].Photo;
 					element.appendChild( symbol );
 
 					const details = document.createElement( 'div' );
 					details.className = 'details';
-					// details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ]; //photo + age
 					details.innerHTML = '<b>' + table[i].Name + '</b>' + '<br>' + table[i].Interest;
 					element.appendChild( details );
 
