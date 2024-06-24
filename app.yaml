@@ -15,5 +15,5 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 env_variables:
-  client_secret: '1064733432061-p2ts7vsqsgsfp24erb0hu1qb9ndpuknm.apps.googleusercontent.com'
-  client_id: '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'
+  client_secret: ''
+  client_id: ''
